@@ -11,8 +11,15 @@ public class Password {
             System.out.print("Enter Password: ");
             String password = scanner.nextLine();
             if (password.equals(pass)) {
-                System.out.println("Login Successful");
-                break;
+                System.out.println("Welcome to my space\nSelect from below\n1. Ice cream\n2. Puffs\n3. Cold Drinks\n4. Buns");
+                int option = scanner.nextInt();
+                if (option == 1) {
+                    System.out.println("Enjoy your Ice Cream");
+                    break;
+                } else if (option == 2) {
+                    System.out.println("Enjoy you Puff");
+                    break;
+                }
             } else {
                 System.out.println("Invalid password, please try again");
                 chance--;
