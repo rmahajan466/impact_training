@@ -10,6 +10,8 @@ public class Inheritance {
         dog.eat();
         GermanShepherd germanShepherd = new GermanShepherd();
         germanShepherd.eat();
+        Cat cat = new Cat();
+        cat.eat();
     }
 }
 
@@ -28,5 +30,11 @@ class Dog extends Animal {
 class GermanShepherd extends Dog {
     public void german() {
         System.out.println("German Shepherd");
+    }
+}
+
+class Cat extends Animal {
+    public void meow() {
+        System.out.println("Meowing...");
     }
 }
